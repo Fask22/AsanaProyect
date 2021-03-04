@@ -45,49 +45,21 @@ body {
 
 /* ENCABEZADO */
 
-.cabecera {
-    order: -2;
-    background-image: linear-gradient(to left, rgb(97, 25, 97) 25%, magenta 50%, rgb(161, 33, 151), cyan 100%);
-    width: 99.9%;
-    height: 4em;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    border: .5px solid rgb(20, 119, 104, 50%);
-}
-
-.cabecera:hover {
-    background-image: linear-gradient(to right, rgb(97, 25, 97) 25%, magenta 50%, rgb(161, 33, 151), cyan 100%);
-    transform: scale(1.1);
-    transition: all 3s ease-in;
-}
-
 /* BARRA NAVEGACION */
 
-.cabecera nav ul li {
-    list-style: none;
+header {
+    margin-top: .01%;
+    order: -2;
+    width: 100%;
 }
 
-.sup ul {
-    width: 180%;
-    display: flex;
-    justify-content: space-around;
-    margin-left: -40%;
+.container-fluid {
+    width: 100%;
+    background-color: #8a0a9b96;
 }
 
-.cabecera .sup ul li a {
-    color: rgb(243, 242, 243);
-    text-decoration: none;
-    -webkit-text-stroke: 1px rgb(59, 46, 59);
-}
-
-.titulo>.aTitulo {
-    font-size: 50px;
-    color: #0d9c95;
-    padding-left: 200%;
-    -webkit-text-stroke: 2px rgb(216, 214, 197);
-    text-decoration: none;
+h1 {
+    color: #4a1e57;
 }
 
 /* articulos */
@@ -118,7 +90,7 @@ body {
 /*PRODUCTOS y SERVICIOS */
 
 .paginasAside {
-    order: -2;
+    order: -1;
     background-color: rgb(20, 119, 104, 90%);
     line-height: 2em;
     width: 99.7%;
@@ -197,11 +169,12 @@ footer {
     margin: auto auto 1.5rem;
 }
 
-.productoImg{
+.productoImg {
     max-width: 12rem;
     margin: auto;
     margin-top: 1em;
 }
+
 /* FORMULARIO - CONTACTO.HTML */
 
 .form {
@@ -344,3 +317,29 @@ footer {
 }
 
 /* RESPONSIVE */
+
+@media (max-width:500px) {
+    .form {
+        max-width: 500px;
+    }
+    .submit, .reset {
+        max-width: 100px;
+        font-size: 1em;
+    }
+    header {
+        max-width: 100vh;
+    }
+}
+
+@media (max-width:800px) {
+    .form {
+        max-width: 100%;
+    }
+    .submit, .reset {
+        max-width: 100px;
+        font-size: 1em;
+    }
+    header {
+        max-width: 100%;
+    }
+}
