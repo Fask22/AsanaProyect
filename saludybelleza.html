@@ -1,109 +1,102 @@
 <!DOCTYPE html>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./bt-css/bootstrap.css">
-<link rel="stylesheet" href="css/estilos.css">
+<html>
 
-<body>
-    <!-- Encabezado -->
-    <header class="cabecera">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <h1>ASANA</h1>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Menu
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Nosotros</a></li>
-                                <li><a class="dropdown-item" href="#">Blog</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Politica de Privacidad</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Buscar</button>
-                    </form>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./bt-css/bootstrap.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./bt-css/bootstrap.min.css">
+    <title>Salud y Belleza</title>
+</head>
+
+<body class="syb">
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark navbar-custom">
+        <div class="container"><a class="navbar-brand" href="index.html">ASANA</a><button data-bs-toggle="collapse"
+                class="navbar-toggler" data-bs-target="#navbarResponsive"><span class="visually-hidden">Toggle
+                    navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">INICIO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Productos.html">Productos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="text-center text-white masthead">
+        <div class="masthead-content">
+            <div class="container">
+                <h1 class="masthead-heading mb-0">Salud y Belleza</h1>
+                <h2 class="masthead-subheading mb-0">Tutoriales</h2><a class="btn btn-primary btn-xl rounded-pill mt-5"
+                    role="button" href="#">Aprende con Nosotros</a>
+            </div>
+        </div>
+        <div class="bg-circle-1 bg-circle"></div>
+        <div class="bg-circle-2 bg-circle"></div>
+        <div class="bg-circle-3 bg-circle"></div>
+        <div class="bg-circle-4 bg-circle"></div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5"><video class="videoMuestra" src="./media/shampo.mp4" width="500em" controls></div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5">
+                        <h2 class="display-4">VIDEO 1</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam
+                            sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione
+                            voluptatum molestiae adipisci, beatae obcaecati.</p>
+                    </div>
                 </div>
             </div>
-        </nav>
-    </header>
-
-
-    <!--ASIDE CON TRANSFORMACION Y TRANSICION-->
-    <aside class="paginasAside">
-        <ul>
-            <li>
-                <a class="submenu" href="Productos.html">Productos
-                    <ul>
-                        <li class="submenu1"><a href="Productos.html">Shampoo</a></li>
-                        <li class="submenu1"><a href="#">Acondicionador</a></li>
-                        <li class="submenu1"><a href="#">Cremas</a></li>
-                        <li class="submenu1"><a href="#">Escencias</a></li>
-                        <li class="submenu1"><a href="#">Perfumes</a></li>
-                        <li class="submenu1"><a href="#">Aceites Orgánicos</a></li>
-                        <li class="submenu1"><a href="#">Jabones</a></li>
-                    </ul>
-                </a>
-            </li>
-            <li>
-                <a href="saludybelleza.html">Salud y Belleza</a>
-            </li>
-            <li>
-                <a href="#">Cursos</a>
-            </li>
-            <li>
-                <a href="#">Flores de Bach</a>
-            </li>
-            <li>
-                <a href="microdosis.html">Microdosis</a>
-            </li>
-            <li>
-                <a href="#">Talleres Gratuitos</a>
-            </li>
-            <li>
-                <a href="#">Yoga</a>
-            </li>
-            <li>
-                <a href="#">Reiki</a>
-            </li>
-        </ul>
-    </aside>
-
-    <h2 class="saludybelleza">Salud y Belleza</h2>
-
-    <video src="media/shampo.mp4" controls width="560px"></video>
-
-    <div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/lFYgESIii8k" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-    </div>
-    <footer>
-        <p>Todos los Derechos Reservados</p>
-        <audio src="media/03.mp3" controls></audio>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5"><video class="videoMuestra" src="./media/shampo.mp4" width="500em" controls></div>
+                </div>
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5">
+                        <h2 class="display-4">Video 2</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam
+                            sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione
+                            voluptatum molestiae adipisci, beatae obcaecati.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5"><video class="videoMuestra" src="./media/shampo.mp4" width="500em" controls></div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5">
+                        <h2 class="display-4">Video 3</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam
+                            sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione
+                            voluptatum molestiae adipisci, beatae obcaecati.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="py-5 bg-black">
+        <div class="container">
+            <p class="text-center text-white m-0 small">Todos los derechos Reservados © 2021</p>
+        </div>
     </footer>
-    <script src="./js/bootstrap.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
 </body>
+
+</html>

@@ -93,7 +93,7 @@ h1 {
     order: -1;
     background-color: rgb(20, 119, 104, 90%);
     line-height: 2em;
-    width: 99.7%;
+    width: 100%;
     border: 2px solid rgb(158, 10, 121, 20%);
     animation-name: asidecolor;
     animation-duration: 5s;
@@ -316,6 +316,14 @@ footer {
     width: 200px;
 }
 
+/* Salud y Belleza */
+
+.syb{
+    background-color: #e6653e;
+    background-size: cover;
+    background-image: none;
+}
+
 /* RESPONSIVE */
 
 @media (max-width:500px) {
@@ -328,6 +336,10 @@ footer {
     }
     header {
         max-width: 100vh;
+    }
+
+    .videoMuestra{
+        width: 100%;
     }
 }
 
@@ -343,3 +355,4 @@ footer {
         max-width: 100%;
     }
 }
+
