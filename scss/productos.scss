@@ -1,0 +1,19 @@
+.flexProductos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 2em;
+    
+    .card {
+    background-color: #886950d7;
+    border: 3px solid #9e940b;
+    margin: auto auto 1.5rem;
+    }
+
+.productoImg {
+    max-width: 12rem;
+    margin: auto;
+    margin-top: 1em;
+    }
+
+}

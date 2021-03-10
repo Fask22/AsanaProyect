@@ -1,0 +1,30 @@
+
+.Teach--Rojo{
+    color:red;
+}
+.Teach--Verde{
+    color:rgb(16, 240, 16);
+}
+
+.Teach--Mayus{
+ text-transform: uppercase;
+}
+
+.Teach--sombra{
+    text-shadow: 0.1em 0.1em #333;
+}
+
+.Teach--Cajaroja{
+    width: 100px;
+    background-color: red;
+}
+
+
+.Teach--CajaCyan--Circular{
+    width: 100px;
+    height: 100px;
+    background-color: cyan;
+    border-radius: 50px;
+    display:flex;
+    align-items: center;
+}

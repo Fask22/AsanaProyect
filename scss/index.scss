@@ -1,0 +1,22 @@
+.imgcontenedorPadre {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    .hijo img {
+    max-width: 150px;
+    border-radius: 150px;
+    border: 15px double rgba(3, 255, 234, 0.548);
+    margin-top: 5em;
+    }
+
+    .hijo img:hover {
+    transform: scale(1.8, 1.8);
+    transition: all 1.8s ease;
+    }
+}
+
+
