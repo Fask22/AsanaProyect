@@ -1,12 +1,32 @@
+@keyframes colors1 {
+  0% {
+    background-color: rgba(229, 231, 201, 0.781); }
+  50% {
+    background-color: rgba(113, 210, 223, 0.733); }
+  90% {
+    background-color: rgba(229, 231, 201, 0.781); } }
+
+@keyframes colors2 {
+  0% {
+    color: crimson; }
+  50% {
+    color: cornsilk; }
+  90% {
+    color: crimson; } }
+
 .paginasAside {
   background-color: rgba(124, 104, 12, 0.705);
   line-height: 2em;
-  width: auto;
-  border: 2px solid rgba(49, 49, 37, 0.466); }
+  width: width 100%;
+  border: 2px solid rgba(49, 49, 37, 0.466);
+  animation-duration: 5s;
+  animation-name: colors1;
+  animation-iteration-count: infinite; }
   .paginasAside ul {
     list-style: none;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     justify-content: space-around;
     margin-top: 1em;
@@ -15,7 +35,12 @@
     color: rgba(229, 224, 233, 0.959);
     text-decoration: none;
     font-size: 1.5em;
-    font-family: 'Lobster', cursive; }
+    font-family: "Lobster", cursive;
+    max-width: 2em;
+    margin: 0.5em;
+    animation-duration: 5s;
+    animation-name: colors2;
+    animation-iteration-count: infinite; }
   .paginasAside ul li a:hover {
     -webkit-text-stroke: 0.2px #e8e9a5; }
   .paginasAside ul li > ul {
@@ -33,6 +58,8 @@
     right: 81.3%;
     border: 1px solid #b9a704;
     z-index: 100; }
+  .paginasAside ul li:hover > ul a {
+    margin: 0; }
   .paginasAside ul li > ul li a:hover {
     -webkit-text-stroke: 0.5px #ee9804; }
 
@@ -41,15 +68,34 @@
   .navbar .container-fluid {
     background-color: #c9ac2b; }
   .navbar .navbar-brand {
+    font-family: Lobster;
     color: black; }
 
 footer {
-  color: #fff;
+  color: #c95757;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 10rem; }
+
+@keyframes colors {
+  0% {
+    background-color: rgba(184, 135, 11, 0.7);
+    transform: scale(1);
+    border: 15px double rgba(3, 255, 234, 0.548); }
+  50% {
+    background-color: rgba(199, 199, 98, 0.7);
+    color: crimson;
+    transform: scale(1.1);
+    border: 15px double rgba(247, 222, 1, 0.548); }
+  100% {
+    background-color: rgba(184, 135, 11, 0.7);
+    transform: scale(1) rotate(360deg);
+    border: 15px double rgba(3, 255, 234, 0.548); } }
+
+body {
+  background-image: url(/media/15929122735876.jpg); }
 
 .imgcontenedorPadre {
   width: 100%;
@@ -57,12 +103,15 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-around; }
   .imgcontenedorPadre .hijo img {
-    max-width: 150px;
+    max-width: 10em;
     border-radius: 150px;
     border: 15px double rgba(3, 255, 234, 0.548);
-    margin-top: 5em; }
+    margin-top: 5em;
+    animation-duration: 3s;
+    animation-name: colors;
+    animation-iteration-count: infinite; }
   .imgcontenedorPadre .hijo img:hover {
     transform: scale(1.8, 1.8);
     transition: all 1.8s ease; }
@@ -70,22 +119,44 @@ footer {
 .microdosis {
   grid-area: microdosis;
   height: 14rem;
-  max-width: 100%; }
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .microdosis .hj1 {
+    color: magenta; }
+  .microdosis .hj2 {
+    color: darkgoldenrod; }
+  .microdosis .hj3 {
+    color: darkcyan; }
 
 .utilidad {
+  width: 25em;
+  background-color: rgba(233, 216, 179, 0.5);
+  border-radius: 50px;
+  margin-top: 5em;
   grid-area: utilidad;
-  height: 14rem;
-  max-width: 100%; }
+  height: 14em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
 
 .uso {
+  background-color: #752c2c7a;
+  width: max-content;
+  margin-top: 5em;
   grid-area: uso;
-  height: 14rem;
+  height: 14em;
   max-width: 100%; }
 
 .cursos {
   grid-area: cursos;
-  height: 14rem;
-  max-width: 100%; }
+  background-color: #752c2c7a;
+  margin-top: 5em;
+  height: 14em;
+  max-width: 100%;
+  border-radius: 10px; }
 
 .footer {
   grid-area: footer; }
@@ -94,16 +165,25 @@ footer {
   max-width: 98.5%;
   display: grid;
   grid-template-areas: "microdosis microdosis microdosis microdosis microdosis microdosis" "utilidad uso uso uso cursos cursos" "utilidad uso uso uso cursos cursos" "footer footer footer footer footer footer";
-  grid-gap: 1rem;
+  grid-gap: 1em;
   padding: 10px; }
   .contenedorPadre .contenedorPadre > .fondo {
     border: 1px solid #0e0e0e;
     text-align: center;
     background-color: rgba(233, 219, 200, 0.562);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
+
+.un-1em {
+  font-size: 1em; }
+
+.un-3em {
+  font-size: 3em; }
+
+.un-5em {
+  font-size: 5em; }
 
 .form {
-  background: #c99e9e;
+  background: rgba(201, 158, 158, 0.8);
   width: 800px;
   margin: 20px auto;
   padding: 20px;
@@ -197,30 +277,123 @@ footer {
     border: 3px solid #9e940b;
     margin: auto auto 1.5rem; }
   .flexProductos .productoImg {
-    max-width: 12rem;
+    max-width: 12em;
     margin: auto;
     margin-top: 1em; }
 
-.Teach--Rojo {
-  color: red; }
+@keyframes colors {
+  0% {
+    background-color: rgba(184, 135, 11, 0.7);
+    transform: scale(1); }
+  50% {
+    background-color: rgba(255, 255, 224, 0.7);
+    color: crimson;
+    transform: scale(1.1); }
+  100% {
+    background-color: rgba(184, 135, 11, 0.7);
+    transform: scale(1) rotate(360deg); } }
 
-.Teach--Verde {
-  color: #10f010; }
-
-.Teach--Mayus {
-  text-transform: uppercase; }
-
-.Teach--sombra {
-  text-shadow: 0.1em 0.1em #333; }
-
-.Teach--Cajaroja {
-  width: 100px;
-  background-color: red; }
-
-.Teach--CajaCyan--Circular {
-  width: 100px;
-  height: 100px;
-  background-color: cyan;
-  border-radius: 50px;
+.vidTuto {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center; }
+  .vidTuto .anim h2 {
+    background: #000;
+    animation-duration: 5s;
+    animation-name: colors;
+    animation-iteration-count: infinite; }
+
+.tuto-1 {
+  background-color: rgba(128, 128, 128, 0.712);
+  width: 10em;
+  height: 6em;
+  font-size: 2em;
+  margin: 1em;
+  color: #c9cc0d;
+  font-family: lobster;
+  border: 0.3em solid #daa76d;
+  border-radius: 1em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.tuto-2 {
+  background-color: rgba(128, 128, 128, 0.712);
+  width: 10em;
+  height: 6em;
+  font-size: 2em;
+  margin: 1em;
+  color: #c9cc0d;
+  font-family: lobster;
+  border: 0.3em solid #daa76d;
+  border-radius: 1em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.tuto-3 {
+  background-color: rgba(128, 128, 128, 0.712);
+  width: 10em;
+  height: 6em;
+  font-size: 2em;
+  margin: 1em;
+  color: #c9cc0d;
+  font-family: lobster;
+  border: 0.3em solid #daa76d;
+  border-radius: 1em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.tuto-4 {
+  background-color: rgba(128, 128, 128, 0.712);
+  width: 10em;
+  height: 6em;
+  font-size: 2em;
+  margin: 1em;
+  color: #c9cc0d;
+  font-family: lobster;
+  border: 0.3em solid #daa76d;
+  border-radius: 1em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.tuto-5 {
+  background-color: rgba(128, 128, 128, 0.712);
+  width: 10em;
+  height: 6em;
+  font-size: 2em;
+  margin: 1em;
+  color: #c9cc0d;
+  font-family: lobster;
+  border: 0.3em solid #daa76d;
+  border-radius: 1em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.tuto-6 {
+  background-color: rgba(128, 128, 128, 0.712);
+  width: 10em;
+  height: 6em;
+  font-size: 2em;
+  margin: 1em;
+  color: #c9cc0d;
+  font-family: lobster;
+  border: 0.3em solid #daa76d;
+  border-radius: 1em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.anim:hover {
+  transform: scale(1.1);
+  transition-duration: 2s; }

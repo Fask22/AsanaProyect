@@ -1,25 +1,89 @@
+$magenta: hj1;
+$dgold: hj2;
+$dcyan: hj3;
+$lyllow: hj4;
+$dred: hj5;
+$lgblue: hj6;
+$ancho2: 5em;
+$lila: rgb(202, 15, 130);
+$cyan: rgb(9, 207, 207);
+$x2: scale(1.5);
+$s1-8: all 1.8s ease;
+$sizes: 1em, 3em, 5em;
+
 .microdosis {
     grid-area: microdosis;
     height: 14rem;
     max-width: 100%;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .hj1 {
+        //Condicionales!!
+        @if ($magenta == hj1) {
+            color: magenta;
+        } @else if ($dgold == hj2) {
+            color: darkgoldenrod;
+        } @else if ($dcyan == hj3) {
+            color: darkcyan;
+        } @else if ($lyllow == hj4) {
+            color: lightyellow;
+        } @else {
+            color: #752c2c;
+        }
+    }
+    .hj2 {
+        @if ($dgold == hj2) {
+            color: darkgoldenrod;
+        } @else if ($dcyan == hj3) {
+            color: darkcyan;
+        } @else if ($lyllow == hj4) {
+            color: lightyellow;
+        } @else {
+            color: #752c2c;
+        }
+    }
 
+    .hj3 {
+        @if ($dcyan == hj3) {
+            color: darkcyan;
+        } @else if ($lyllow == hj4) {
+            color: lightyellow;
+        } @else {
+            color: #752c2c;
+        }
+    }
+}
+// OPERACIONES
 .utilidad {
+    width: ($ancho2 * 10)/2; //AQUI VA LA OPERACIÓN DE MULTIPLICACION Y DIVISION PARA LA VARIABLE DE ($ancho2)
+    background-color: rgba(233, 216, 179, 0.5);
+    border-radius: 50px;
+    margin-top: 5em;
     grid-area: utilidad;
-    height: 14rem;
-    max-width: 100%;
+    height: 14em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .uso {
+    background-color: #752c2c7a;
+    width: max-content;
+    margin-top: 5em;
     grid-area: uso;
-    height: 14rem;
+    height: 14em;
     max-width: 100%;
 }
 
 .cursos {
     grid-area: cursos;
-    height: 14rem;
+    background-color: #752c2c7a;
+    margin-top: 5em;
+    height: 14em;
     max-width: 100%;
+    border-radius: 10px;
 }
 
 .footer {
@@ -30,13 +94,19 @@
     max-width: 98.5%;
     display: grid;
     grid-template-areas: "microdosis microdosis microdosis microdosis microdosis microdosis" "utilidad uso uso uso cursos cursos" "utilidad uso uso uso cursos cursos" "footer footer footer footer footer footer";
-    grid-gap: 1rem;
+    grid-gap: 1em;
     padding: 10px;
-    .contenedorPadre>.fondo {
-    border: 1px solid #0e0e0e;
-    text-align: center;
-    background-color: rgba(233, 219, 200, 0.562);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    .contenedorPadre > .fondo {
+        border: 1px solid #0e0e0e;
+        text-align: center;
+        background-color: rgba(233, 219, 200, 0.562);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+            "Helvetica Neue", sans-serif;
     }
 }
-
+//VARIABLE EACH
+@each $size in $sizes {
+    .un-#{$size} {
+        font-size: $size;
+    }
+}

@@ -1,22 +1,53 @@
+$ancho1: 10em;
+$alto1: 3em * 2;
+$darkgold: rgba(184, 135, 11, 0.7);
+$lyllow: rgba(199, 199, 98, 0.7);
+$x2: scale(1.5);
+$s1-8: 1.8s ease;
+
+@keyframes colors {
+    0% {
+        background-color: $darkgold;
+        transform: scale(1);
+        border: 15px double rgba(3, 255, 234, 0.548);
+    }
+    50% {
+        background-color: $lyllow;
+        color: crimson;
+        transform: scale(1.1);
+        border: 15px double rgba(247, 222, 1, 0.548);
+    }
+    100% {
+        background-color: $darkgold;
+        transform: scale(1) rotate(360deg);
+        border: 15px double rgba(3, 255, 234, 0.548);
+    }
+}
+
+body {
+    background-image: url(/media/15929122735876.jpg);
+}
+
 .imgcontenedorPadre {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    
+    justify-content: space-around;
+
     .hijo img {
-    max-width: 150px;
-    border-radius: 150px;
-    border: 15px double rgba(3, 255, 234, 0.548);
-    margin-top: 5em;
+        max-width: $ancho1;
+        border-radius: 150px;
+        border: 15px double rgba(3, 255, 234, 0.548);
+        margin-top: 5em;
+        animation-duration: 3s;
+        animation-name: colors;
+        animation-iteration-count: infinite;
     }
 
     .hijo img:hover {
-    transform: scale(1.8, 1.8);
-    transition: all 1.8s ease;
+        transform: scale(1.8, 1.8);
+        transition: all 1.8s ease;
     }
 }
-
-

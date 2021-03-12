@@ -1,3 +1,5 @@
+$anchoP:48em;
+
 .flexProductos {
     display: flex;
     flex-direction: row;
@@ -11,7 +13,7 @@
     }
 
 .productoImg {
-    max-width: 12rem;
+    max-width: $anchoP/4;  //AQUI VA LA OPERACIÓN DEDIVISION PARA LA VARIABLE DE ($anchoP)
     margin: auto;
     margin-top: 1em;
     }
