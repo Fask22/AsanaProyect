@@ -1,0 +1,28 @@
+.infoCursos {
+    width: 60%;
+    margin: auto;
+    margin-top: 1%;
+    background-color: rgba(0, 255, 255, 0.315);
+    text-align: center;
+    h2 {
+        color: rgb(212, 162, 23);
+        // text-shadow: -2px -2px 1px rgb(255, 255, 255);
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+    p {
+        color: #000;
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+}
+
+#carouselExampleCaptions {
+    max-width: 70%;
+    margin: auto;
+    margin-top: 5%;
+    h5 {
+        text-shadow: -2px -2px 1px #000;
+    }
+    p {
+        text-shadow: -1px -1px 1px #000;
+    }
+}

@@ -1,0 +1,23 @@
+.navegacion {
+    width: 100%;
+    background-color: rgba(145, 133, 32, 0.644);
+    display: flex;
+    ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        text-decoration: none;
+        li {
+            margin-top: .7em;
+            list-style: none;
+            a {
+                
+                font-family: "Fredoka One", cursive;
+                font-size: 1.5em;
+                text-decoration: none;
+                color: rgba(117, 117, 70, 0.815);
+                text-shadow: 0.05em 0.05em 0.4em #fff;
+            }
+        }
+    }
+}

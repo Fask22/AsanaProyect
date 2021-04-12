@@ -1,85 +1,148 @@
-$ancho1: 10em;
-$alto1: 3em * 2;
-$darkgold: rgba(184, 135, 11, 0.7);
-$lyllow: rgba(199, 199, 98, 0.7);
-$x2: scale(1.5);
-$s1-8: 1.8s ease;
-
-@keyframes colors {
-    0% {
-        background-color: $darkgold;
-        transform: scale(1);
-        border: 15px double rgba(3, 255, 234, 0.548);
-    }
-    50% {
-        background-color: $lyllow;
-        color: crimson;
-        transform: scale(1.1);
-        border: 15px double rgba(247, 222, 1, 0.548);
-    }
-    100% {
-        background-color: $darkgold;
-        transform: scale(1) rotate(360deg);
-        border: 15px double rgba(3, 255, 234, 0.548);
-    }
-}
-
-body {
-    background-image: url(/media/15929122735876.jpg);
-}
-
-.imgcontenedorPadre {
+.contenidoPrincipal {
     width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+    height: 100em;
+    .productos {
+        width: 100%;
+        height: 30em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Fira Sans Condensed", sans-serif;
+        margin-top: 10em;
+        h4 {
+            font-weight: bold;
+            font-size: 2em;
+        }
+        p {
+            padding: 2px;
+            width: 10em;
+            font-size: 2.5em;
+        }
+        a {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h3 {
+                font-weight: 100;
+                font-size: 4em;
+                color: rgb(255, 186, 107);
+                text-shadow: 0.1em 0.1em 0.3em rgb(245, 255, 111), -5px -5px 10px rgb(245, 255, 111);
+            }
+        }
+        img {
+            margin: 2em;
+            border-radius: 100%;
+            box-shadow: 5px 5px 10px rgb(252, 255, 65), -5px -5px 10px rgb(130, 133, 4);
+        }
+    }
 
-    .hijo img {
-        max-width: $ancho1;
-        border-radius: 150px;
-        border: 15px double rgba(3, 255, 234, 0.548);
+    .saludBelleza {
+        width: 100%;
+        height: 30em;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Fira Sans Condensed", sans-serif;
         margin-top: 5em;
-        animation-duration: 3s;
-        animation-name: colors;
-        animation-iteration-count: infinite;
+
+        h4 {
+            font-weight: bold;
+            font-size: 3em;
+        }
+        p {
+            text-align: center;
+            padding: 2px;
+            width: 10em;
+            font-size: 3em;
+        }
+        a {
+            text-decoration: none;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            h3 {
+                font-weight: 100;
+                font-size: 4em;
+                color: rgb(255, 186, 107);
+                text-shadow: 0.1em 0.1em 0.3em rgb(245, 255, 111), -5px -5px 10px rgb(245, 255, 111);
+            }
+        }
+        img {
+            margin: 2em;
+            border-radius: 100%;
+            box-shadow: 5px 5px 1em rgb(251, 255, 0), -5px -5px 1em rgb(130, 133, 4);
+        }
+    }
+
+    .cursos {
+        width: 100%;
+        height: 30em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Fira Sans Condensed", sans-serif;
+        margin-top: 5em;
+
+        h4 {
+            font-weight: bold;
+            margin-left: 1em;
+            width: 100%;
+            font-size: 3em;
+        }
+        p {
+            padding: 2px;
+            width: 10em;
+            font-size: 2.2em;
+        }
+        a {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            h3 {
+                font-weight: bold;
+                font-size: 4em;
+                color: rgb(187, 4, 141);
+                text-shadow: 0.1em 0.1em 0.5em rgb(245, 255, 111), -0.1em -0.1em 0.5em rgb(245, 255, 111);
+                -webkit-text-stroke-color: 1px solid #000;
+            }
+        }
+        img {
+            margin: 2em;
+            border-radius: 100%;
+            box-shadow: 5px 5px 10px rgb(252, 255, 53), -5px -5px 1em rgb(130, 133, 4);
+        }
     }
 }
 
 .mapa {
-    background-color: rgba(63, 62, 62, 0.616);
+    background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
     height: 10em;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-end;
-    margin-top: 60%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
 
     .map {
-        padding: 0;
-        margin: 0;
         width: 28em;
         height: 10em;
-        background-color: rgba(0, 0, 0, 0.384);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        display: block;
 
         .elemento-mapa {
             display: block;
             list-style-type: none;
         }
-        li>a{
+        li > a {
             text-decoration: none;
+            color: aliceblue;
         }
     }
-}
-
-footer{
-    margin: 0;
-    background-color: rgba(0, 0, 0, 0.637);
 }

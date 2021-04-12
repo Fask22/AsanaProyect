@@ -1,21 +1,22 @@
-$anchoP:48em;
+$anchoP: 48em;
 
 .flexProductos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 2em;
-    
+
     .card {
-    background-color: #886950d7;
-    border: 3px solid #9e940b;
-    margin: auto auto 1.5rem;
+        background-color: #886950d7;
+        border: 3px solid #9e940b;
+        margin: auto auto 1.5rem;
     }
 
-.productoImg {
-    max-width: $anchoP/4;  //AQUI VA LA OPERACIÓN DEDIVISION PARA LA VARIABLE DE ($anchoP)
-    margin: auto;
-    margin-top: 1em;
+    .productoImg {
+        max-width: $anchoP/4;
+        margin: auto;
+        margin-top: 1em;
+        width:200px;
+        height: 288px;
     }
-
 }

@@ -1,229 +1,208 @@
-@keyframes colors1 {
+@keyframes colorSubheader {
   0% {
-    background-color: rgba(229, 231, 201, 0.781); }
+    color: white;
+    text-shadow: 5px 5px 20px #e7e190, -5px -5px 20px #e7e190; }
   50% {
-    background-color: rgba(113, 210, 223, 0.733); }
+    color: rgba(251, 255, 25, 0.61);
+    text-shadow: 5px 5px 20px white, -5px -5px 20px #f2f0f3; }
+  80% {
+    color: white;
+    text-shadow: 5px 5px 20px #e7e190, -5px -5px 20px #e7e190; }
   90% {
-    background-color: rgba(229, 231, 201, 0.781); } }
+    color: white;
+    text-shadow: 5px 5px 20px #e7e190, -5px -5px 20px #e7e190; }
+  100% {
+    color: white;
+    text-shadow: 5px 5px 20px #e7e190, -5px -5px 20px #e7e190; } }
 
-@keyframes colors2 {
-  0% {
-    color: crimson; }
-  50% {
-    color: cornsilk; }
-  90% {
-    color: crimson; } }
-
-.paginasAside {
-  background-color: rgba(124, 104, 12, 0.705);
-  line-height: 2em;
-  width: width 100%;
-  border: 2px solid rgba(49, 49, 37, 0.466);
-  animation-duration: 5s;
-  animation-name: colors1;
-  animation-iteration-count: infinite; }
-  .paginasAside ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    justify-content: space-around;
-    margin-top: 1em;
-    width: auto; }
-  .paginasAside ul li a {
-    color: rgba(229, 224, 233, 0.959);
-    text-decoration: none;
-    font-size: 1.5em;
-    font-family: "Lobster", cursive;
-    max-width: 2em;
-    margin: 0.5em;
-    animation-duration: 5s;
-    animation-name: colors2;
-    animation-iteration-count: infinite; }
-  .paginasAside ul li a:hover {
-    -webkit-text-stroke: 0.2px #e8e9a5; }
-  .paginasAside ul li > ul {
-    display: none;
-    margin-left: 0;
-    margin-top: 0; }
-  .paginasAside ul li > ul li a {
-    color: rgba(31, 59, 55, 0.7);
-    font-size: 1.3em; }
-  .paginasAside ul li:hover > ul {
-    width: 16rem;
-    display: block;
-    position: absolute;
-    background-color: #9b8d57;
-    right: 81.3%;
-    border: 1px solid #b9a704;
-    z-index: 100; }
-  .paginasAside ul li:hover > ul a {
-    margin: 0; }
-  .paginasAside ul li > ul li a:hover {
-    -webkit-text-stroke: 0.5px #ee9804; }
-
-.navbar {
-  height: 4em; }
-  .navbar .container-fluid {
-    background-color: #c9ac2b; }
-  .navbar .navbar-brand {
-    font-family: Lobster;
-    color: black; }
-
-footer {
-  color: #c95757;
+header {
   width: 100%;
+  height: 35em;
+  background-image: url(/media/img/bgcircle.jpg);
+  background-size: cover;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-top: 10rem; }
-
-@keyframes colors {
-  0% {
-    background-color: rgba(184, 135, 11, 0.7);
-    transform: scale(1);
-    border: 15px double rgba(3, 255, 234, 0.548); }
-  50% {
-    background-color: rgba(199, 199, 98, 0.7);
-    color: crimson;
-    transform: scale(1.1);
-    border: 15px double rgba(247, 222, 1, 0.548); }
-  100% {
-    background-color: rgba(184, 135, 11, 0.7);
-    transform: scale(1) rotate(360deg);
-    border: 15px double rgba(3, 255, 234, 0.548); } }
-
-body {
-  background-image: url(/media/15929122735876.jpg); }
-
-.imgcontenedorPadre {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around; }
-  .imgcontenedorPadre .hijo img {
-    max-width: 10em;
-    border-radius: 150px;
-    border: 15px double rgba(3, 255, 234, 0.548);
-    margin-top: 5em;
+  justify-content: center;
+  text-align: center; }
+  header .asana {
+    font-size: 10em;
+    color: rgba(139, 109, 8, 0.753);
+    font-family: "Pacifico", cursive;
+    text-shadow: 5px 5px 20px white, -5px -5px 20px #f2f0f3; }
+  header .subAsana {
+    font-size: 4em;
+    max-width: 100%;
+    color: rgba(255, 255, 255, 0.74);
+    font-family: "Pacifico", cursive;
+    text-shadow: 5px 5px 20px #e7e190, -5px -5px 20px #e7e190;
+    animation-name: colorSubheader;
     animation-duration: 3s;
-    animation-name: colors;
     animation-iteration-count: infinite; }
 
+footer {
+  width: 100%;
+  height: 20vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  footer p {
+    color: aliceblue; }
+
+.contenidoPrincipal {
+  width: 100%;
+  height: 100em; }
+  .contenidoPrincipal .productos {
+    width: 100%;
+    height: 30em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Fira Sans Condensed", sans-serif;
+    margin-top: 10em; }
+    .contenidoPrincipal .productos h4 {
+      font-weight: bold;
+      font-size: 2em; }
+    .contenidoPrincipal .productos p {
+      padding: 2px;
+      width: 10em;
+      font-size: 2.5em; }
+    .contenidoPrincipal .productos a {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .contenidoPrincipal .productos a h3 {
+        font-weight: 100;
+        font-size: 4em;
+        color: #ffba6b;
+        text-shadow: 0.1em 0.1em 0.3em #f5ff6f, -5px -5px 10px #f5ff6f; }
+    .contenidoPrincipal .productos img {
+      margin: 2em;
+      border-radius: 100%;
+      box-shadow: 5px 5px 10px #fcff41, -5px -5px 10px #828504; }
+  .contenidoPrincipal .saludBelleza {
+    width: 100%;
+    height: 30em;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Fira Sans Condensed", sans-serif;
+    margin-top: 5em; }
+    .contenidoPrincipal .saludBelleza h4 {
+      font-weight: bold;
+      font-size: 3em; }
+    .contenidoPrincipal .saludBelleza p {
+      text-align: center;
+      padding: 2px;
+      width: 10em;
+      font-size: 3em; }
+    .contenidoPrincipal .saludBelleza a {
+      text-decoration: none;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center; }
+      .contenidoPrincipal .saludBelleza a h3 {
+        font-weight: 100;
+        font-size: 4em;
+        color: #ffba6b;
+        text-shadow: 0.1em 0.1em 0.3em #f5ff6f, -5px -5px 10px #f5ff6f; }
+    .contenidoPrincipal .saludBelleza img {
+      margin: 2em;
+      border-radius: 100%;
+      box-shadow: 5px 5px 1em #fbff00, -5px -5px 1em #828504; }
+  .contenidoPrincipal .cursos {
+    width: 100%;
+    height: 30em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Fira Sans Condensed", sans-serif;
+    margin-top: 5em; }
+    .contenidoPrincipal .cursos h4 {
+      font-weight: bold;
+      margin-left: 1em;
+      width: 100%;
+      font-size: 3em; }
+    .contenidoPrincipal .cursos p {
+      padding: 2px;
+      width: 10em;
+      font-size: 2.2em; }
+    .contenidoPrincipal .cursos a {
+      text-decoration: none;
+      display: flex;
+      align-items: center; }
+      .contenidoPrincipal .cursos a h3 {
+        font-weight: bold;
+        font-size: 4em;
+        color: #bb048d;
+        text-shadow: 0.1em 0.1em 0.5em #f5ff6f, -0.1em -0.1em 0.5em #f5ff6f;
+        -webkit-text-stroke-color: 1px solid #000; }
+    .contenidoPrincipal .cursos img {
+      margin: 2em;
+      border-radius: 100%;
+      box-shadow: 5px 5px 10px #fcff35, -5px -5px 1em #828504; }
+
 .mapa {
-  background-color: rgba(63, 62, 62, 0.616);
+  background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 10em;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-end;
-  margin-top: 60%; }
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5%; }
   .mapa .map {
-    padding: 0;
-    margin: 0;
     width: 28em;
     height: 10em;
-    background-color: rgba(0, 0, 0, 0.384);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    display: block; }
     .mapa .map .elemento-mapa {
       display: block;
       list-style-type: none; }
     .mapa .map li > a {
-      text-decoration: none; }
-
-footer {
-  margin: 0;
-  background-color: rgba(0, 0, 0, 0.637); }
-
-.microdosis {
-  grid-area: microdosis;
-  height: 10em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  background-color: rgba(233, 216, 179, 0.5);
-  text-align: center;
-  color: #0d4106; }
-
-.utilidad {
-  width: 100%;
-  background-color: rgba(233, 216, 179, 0.5);
-  grid-area: utilidad;
-  height: 30em;
-  display: flex;
-  flex-direction: column;
-  text-align: center; }
-
-.uso {
-  background-color: rgba(233, 216, 179, 0.5);
-  width: 100%;
-  grid-area: uso;
-  height: 30em;
-  display: flex;
-  flex-direction: column;
-  text-align: center; }
-
-.cursos {
-  width: 100%;
-  grid-area: cursos;
-  background-color: rgba(233, 216, 179, 0.5);
-  height: 30em;
-  border-radius: 10px; }
-
-.footer {
-  grid-area: footer; }
-
-.contenedorPadre {
-  max-width: 98.5%;
-  display: grid;
-  grid-template-areas: "microdosis microdosis microdosis microdosis microdosis microdosis" "utilidad uso uso uso cursos cursos" "utilidad uso uso uso cursos cursos" "footer footer footer footer footer footer";
-  grid-gap: 1em;
-  padding: 1px; }
-  .contenedorPadre .contenedorPadre > .fondo {
-    width: max-content;
-    text-align: center;
-    background-color: rgba(233, 219, 200, 0.562);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
+      text-decoration: none;
+      color: aliceblue; }
 
 .form {
-  background: rgba(201, 158, 158, 0.8);
-  width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  border-radius: 5px; }
+  background: rgba(41, 7, 133, 0.22);
+  width: 80em;
+  padding: 1%;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 3em; }
   .form input {
-    display: inline-block; }
-  .form input[type="text"], .form .form textarea {
-    width: 100%;
+    display: inline-block;
+    align-content: center; }
+  .form input[type="text"],
+  .form .form textarea {
+    max-width: 100%;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 3px;
     border: 2px solid #773767;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 16px; }
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 1em; }
   .form input[type="text"] {
-    width: 95%;
+    width: 20em;
     font-size: 2em; }
   .form textarea {
-    min-height: 120px;
-    max-height: 300px;
-    min-width: 100%;
     max-width: 100%;
+    min-width: 50%;
+    min-height: 120px;
+    max-height: 20em;
     border: 2px solid #773767;
     color: #0e0e0e;
     background: rgba(255, 253, 253, 0.5);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     border-radius: 2px; }
-  .form input[type="text"], .form .form textarea:focus {
+  .form input[type="text"],
+  .form .form textarea:focus {
     border: 2px solid #773767;
     background: rgba(255, 253, 253, 0.5); }
   .form input[type="email"] {
@@ -233,7 +212,7 @@ footer {
     border: 2px solid #773767;
     border-radius: 2px; }
   .form input[type="submit"] {
-    width: 200px;
+    width: 12em;
     margin: 0 auto;
     background: none;
     border: 2px solid #773767;
@@ -246,7 +225,7 @@ footer {
     background: #4a1e57;
     color: #147768; }
   .form input[type="reset"] {
-    width: 200px;
+    width: 12em;
     margin: 0 auto;
     background: none;
     border: 2px solid #773767;
@@ -258,26 +237,6 @@ footer {
   .form input[type="reset"]:hover {
     background: #4a1e57;
     color: #147768; }
-
-@media (max-width: 500px) {
-  .form {
-    max-width: 500px; }
-  .submit, .reset {
-    max-width: 100px;
-    font-size: 1em; }
-  header {
-    max-width: 100vh; }
-  .videoMuestra {
-    width: 100%; } }
-
-@media (max-width: 800px) {
-  .form {
-    max-width: 100%; }
-  .submit, .reset {
-    max-width: 100px;
-    font-size: 1em; }
-  header {
-    max-width: 100%; } }
 
 .flexProductos {
   display: flex;
@@ -291,121 +250,930 @@ footer {
   .flexProductos .productoImg {
     max-width: 12em;
     margin: auto;
-    margin-top: 1em; }
+    margin-top: 1em;
+    width: 200px;
+    height: 288px; }
 
-@keyframes colors {
-  0% {
-    background-color: rgba(184, 135, 11, 0.7);
-    transform: scale(1); }
-  50% {
-    background-color: rgba(255, 255, 224, 0.7);
-    color: crimson;
-    transform: scale(1.1); }
-  100% {
-    background-color: rgba(184, 135, 11, 0.7);
-    transform: scale(1) rotate(360deg); } }
-
-.vidTuto {
+.vidTutorial {
+  width: 100%;
+  height: 100%;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center; }
-  .vidTuto .anim h2 {
-    background: #000;
-    animation-duration: 5s;
-    animation-name: colors;
-    animation-iteration-count: infinite; }
+  justify-content: space-around; }
+  .vidTutorial .contVid {
+    margin: 2em;
+    background-color: #0b2d49;
+    width: 25em;
+    height: 25em;
+    border-radius: 13em;
+    display: inline; }
+    .vidTutorial .contVid .vidTuto {
+      width: 15em; }
+  .vidTutorial .v0 {
+    padding: 5em;
+    background-color: #660656;
+    color: white; }
+  .vidTutorial .v1 {
+    background-color: #d67506;
+    padding: 5em;
+    color: #000003;
+    text-align: center; }
+  .vidTutorial .v2 {
+    background-color: #04df71;
+    padding: 5em;
+    color: #000003;
+    text-align: center; }
+  .vidTutorial .v3 {
+    background-color: #09ac83;
+    padding: 5em;
+    color: #000003;
+    text-align: center; }
+  .vidTutorial .v4 {
+    background-color: #07f7ff;
+    padding: 5em;
+    color: #000003;
+    text-align: center; }
+  .vidTutorial .v5 {
+    background-color: #ac220a;
+    padding: 5em;
+    color: #000003;
+    text-align: center; }
 
-.tuto-1 {
-  background-color: rgba(128, 128, 128, 0.712);
-  width: 10em;
-  height: 6em;
-  font-size: 2em;
-  margin: 1em;
-  color: #c9cc0d;
-  font-family: lobster;
-  border: 0.3em solid #daa76d;
-  border-radius: 1em;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
+.navegacion {
+  width: 100%;
+  background-color: rgba(145, 133, 32, 0.644);
+  display: flex; }
+  .navegacion ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none; }
+    .navegacion ul li {
+      margin-top: .7em;
+      list-style: none; }
+      .navegacion ul li a {
+        font-family: "Fredoka One", cursive;
+        font-size: 1.5em;
+        text-decoration: none;
+        color: rgba(117, 117, 70, 0.815);
+        text-shadow: 0.05em 0.05em 0.4em #fff; }
 
-.tuto-2 {
-  background-color: rgba(128, 128, 128, 0.712);
-  width: 10em;
-  height: 6em;
-  font-size: 2em;
-  margin: 1em;
-  color: #c9cc0d;
-  font-family: lobster;
-  border: 0.3em solid #daa76d;
-  border-radius: 1em;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
+@media only screen and (max-width: 1025px) {
+  header {
+    width: 100%;
+    height: 40em; }
+    header .asana {
+      font-size: 8em; }
+    header .subAsana {
+      font-size: 3em; }
+  .navegacion {
+    width: 100%; }
+    .navegacion ul {
+      width: 100%; }
+  .contenidoPrincipal {
+    width: 80%;
+    height: 100em;
+    display: flex;
+    flex-direction: column;
+    align-content: center; }
+    .contenidoPrincipal .productos {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      height: 30em;
+      text-align: center;
+      margin-left: 10em; }
+      .contenidoPrincipal .productos a {
+        display: flex;
+        flex-direction: column;
+        align-content: center; }
+    .contenidoPrincipal .saludBelleza {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      height: 30em;
+      text-align: center;
+      margin-top: 30em;
+      margin-left: 10em; }
+      .contenidoPrincipal .saludBelleza h3 {
+        margin: 0;
+        width: 10em; }
+      .contenidoPrincipal .saludBelleza p {
+        margin: 0; }
+      .contenidoPrincipal .saludBelleza a {
+        display: flex;
+        flex-direction: column;
+        align-content: center; }
+    .contenidoPrincipal .cursos {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      height: 30em;
+      text-align: center;
+      margin-top: 30em;
+      margin-left: 10em; }
+      .contenidoPrincipal .cursos h3 {
+        margin: 0;
+        width: 5em; }
+      .contenidoPrincipal .cursos p {
+        margin: 0; }
+      .contenidoPrincipal .cursos a {
+        display: flex;
+        flex-direction: column;
+        align-content: center; }
+  .form {
+    width: 100%; }
+  .mapa {
+    width: 100%;
+    margin-top: 100em; } }
 
-.tuto-3 {
-  background-color: rgba(128, 128, 128, 0.712);
-  width: 10em;
-  height: 6em;
-  font-size: 2em;
-  margin: 1em;
-  color: #c9cc0d;
-  font-family: lobster;
-  border: 0.3em solid #daa76d;
-  border-radius: 1em;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
+@media only screen and (max-width: 950px) {
+  header {
+    width: 100%;
+    height: 40em; }
+    header .asana {
+      font-size: 8em; }
+    header .subAsana {
+      font-size: 3em; }
+  .navegacion {
+    width: 100%; }
+    .navegacion ul {
+      width: 100%; }
+  .contenidoPrincipal {
+    width: 80%;
+    height: 100em;
+    display: flex;
+    flex-direction: column;
+    align-content: center; }
+    .contenidoPrincipal .productos {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      height: 30em;
+      text-align: center; }
+      .contenidoPrincipal .productos a {
+        display: flex;
+        flex-direction: column;
+        align-content: center; }
+    .contenidoPrincipal .saludBelleza {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      height: 30em;
+      text-align: center;
+      margin-top: 30em; }
+      .contenidoPrincipal .saludBelleza h3 {
+        margin: 0;
+        width: 10em; }
+      .contenidoPrincipal .saludBelleza p {
+        margin: 0; }
+      .contenidoPrincipal .saludBelleza a {
+        display: flex;
+        flex-direction: column;
+        align-content: center; }
+    .contenidoPrincipal .cursos {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      height: 30em;
+      text-align: center;
+      margin-top: 30em; }
+      .contenidoPrincipal .cursos h3 {
+        margin: 0;
+        width: 5em; }
+      .contenidoPrincipal .cursos p {
+        margin: 0; }
+      .contenidoPrincipal .cursos a {
+        display: flex;
+        flex-direction: column;
+        align-content: center; } }
 
-.tuto-4 {
-  background-color: rgba(128, 128, 128, 0.712);
-  width: 10em;
-  height: 6em;
-  font-size: 2em;
-  margin: 1em;
-  color: #c9cc0d;
-  font-family: lobster;
-  border: 0.3em solid #daa76d;
-  border-radius: 1em;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
+@media only screen and (max-width: 820px) {
+  header {
+    width: 100%;
+    height: 40em; }
+    header .asana {
+      font-size: 8em; }
+    header .subAsana {
+      font-size: 3em; }
+  .navegacion {
+    width: 100%; }
+    .navegacion ul {
+      width: 100%; }
+  .contenidoPrincipal {
+    width: 80%;
+    height: 100em;
+    display: flex;
+    flex-direction: column;
+    align-content: center; }
+    .contenidoPrincipal .productos {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      height: 30em;
+      text-align: center;
+      margin-left: 8em; }
+      .contenidoPrincipal .productos a {
+        display: flex;
+        flex-direction: column;
+        align-content: center; }
+    .contenidoPrincipal .saludBelleza {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      height: 30em;
+      text-align: center;
+      margin-left: 8em;
+      margin-top: 30em; }
+      .contenidoPrincipal .saludBelleza h3 {
+        margin: 0;
+        width: 10em; }
+      .contenidoPrincipal .saludBelleza p {
+        margin: 0; }
+      .contenidoPrincipal .saludBelleza a {
+        display: flex;
+        flex-direction: column;
+        align-content: center; }
+    .contenidoPrincipal .cursos {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      height: 30em;
+      text-align: center;
+      margin-left: 8em;
+      margin-top: 30em; }
+      .contenidoPrincipal .cursos h3 {
+        margin: 0;
+        width: 5em; }
+      .contenidoPrincipal .cursos p {
+        margin: 0; }
+      .contenidoPrincipal .cursos a {
+        display: flex;
+        flex-direction: column;
+        align-content: center; }
+  .form {
+    width: 98%; }
+    .form input[type="text"] {
+      max-width: 6em; }
+  .mapa {
+    width: 100%;
+    margin-top: 100em; } }
 
-.tuto-5 {
-  background-color: rgba(128, 128, 128, 0.712);
-  width: 10em;
-  height: 6em;
-  font-size: 2em;
-  margin: 1em;
-  color: #c9cc0d;
-  font-family: lobster;
-  border: 0.3em solid #daa76d;
-  border-radius: 1em;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
+@media only screen and (max-width: 720px) {
+  header {
+    width: 100%;
+    height: 40em; }
+    header .asana {
+      font-size: 8em; }
+    header .subAsana {
+      font-size: 3em; }
+  .navegacion {
+    width: 100%; }
+    .navegacion ul {
+      width: 100%; }
+  .contenidoPrincipal {
+    width: 80%;
+    height: 100em;
+    display: flex;
+    flex-direction: column;
+    align-content: center; }
+    .contenidoPrincipal .productos {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      height: 30em;
+      text-align: center; }
+      .contenidoPrincipal .productos a {
+        display: flex;
+        flex-direction: column;
+        align-content: center; }
+    .contenidoPrincipal .saludBelleza {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      height: 30em;
+      text-align: center;
+      margin-top: 30em; }
+      .contenidoPrincipal .saludBelleza h3 {
+        margin: 0;
+        width: 10em; }
+      .contenidoPrincipal .saludBelleza p {
+        margin: 0; }
+      .contenidoPrincipal .saludBelleza a {
+        display: flex;
+        flex-direction: column;
+        align-content: center; }
+    .contenidoPrincipal .cursos {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      height: 30em;
+      text-align: center;
+      margin-top: 30em; }
+      .contenidoPrincipal .cursos h3 {
+        margin: 0;
+        width: 5em; }
+      .contenidoPrincipal .cursos p {
+        margin: 0; }
+      .contenidoPrincipal .cursos a {
+        display: flex;
+        flex-direction: column;
+        align-content: center; }
+  .form {
+    width: 98%; }
+    .form input[type="text"] {
+      max-width: 6em; } }
 
-.tuto-6 {
-  background-color: rgba(128, 128, 128, 0.712);
-  width: 10em;
-  height: 6em;
-  font-size: 2em;
-  margin: 1em;
-  color: #c9cc0d;
-  font-family: lobster;
-  border: 0.3em solid #daa76d;
-  border-radius: 1em;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
+@media only screen and (max-width: 620px) {
+  header {
+    width: 100%;
+    height: 40em; }
+    header .asana {
+      font-size: 7em; }
+    header .subAsana {
+      font-size: 2em; }
+  .navegacion {
+    width: 100%; }
+  .contenidoPrincipal {
+    width: 100%;
+    height: 100em;
+    display: flex;
+    flex-direction: column;
+    align-content: center; }
+    .contenidoPrincipal .productos {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      height: 30em;
+      margin: auto;
+      margin-top: 3em; }
+      .contenidoPrincipal .productos p {
+        max-width: 100%; }
+      .contenidoPrincipal .productos a {
+        display: flex;
+        flex-direction: column;
+        align-content: center; }
+        .contenidoPrincipal .productos a h3 {
+          width: 100%; }
+    .contenidoPrincipal .saludBelleza {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 30em;
+      text-align: center;
+      margin: auto;
+      margin-top: 30em; }
+      .contenidoPrincipal .saludBelleza p {
+        max-width: 100%; }
+      .contenidoPrincipal .saludBelleza a {
+        display: flex;
+        flex-direction: column;
+        align-content: center; }
+        .contenidoPrincipal .saludBelleza a h3 {
+          width: 100%; }
+    .contenidoPrincipal .cursos {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 30em;
+      text-align: center;
+      margin: auto;
+      margin-top: 25em; }
+      .contenidoPrincipal .cursos h4 {
+        font-size: 4em;
+        margin-right: 10%; }
+      .contenidoPrincipal .cursos p {
+        font-size: 3em; }
+      .contenidoPrincipal .cursos a {
+        display: flex;
+        flex-direction: column;
+        align-content: center; }
+        .contenidoPrincipal .cursos a h3 {
+          width: 5em; }
+  .form {
+    width: 100%; }
+    .form input[type="submit"] {
+      width: 20%; }
+    .form input[type="reset"] {
+      width: 20%; }
+  .mapa {
+    margin-top: 100em; }
+    .mapa .gMaps {
+      width: 50%; } }
 
-.anim:hover {
-  transform: scale(1.1);
-  transition-duration: 2s; }
+@media only screen and (max-width: 500px) {
+  header {
+    width: 100%;
+    height: 40em; }
+    header .asana {
+      font-size: 6em; }
+    header .subAsana {
+      font-size: 2em; }
+  .navegacion {
+    width: 100%; }
+  .contenidoPrincipal {
+    width: 100%;
+    height: 100em;
+    display: flex;
+    flex-direction: column;
+    align-content: center; }
+    .contenidoPrincipal .productos {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 30em; }
+      .contenidoPrincipal .productos p {
+        max-width: 100%; }
+      .contenidoPrincipal .productos a {
+        display: flex;
+        flex-direction: column;
+        align-content: center; }
+    .contenidoPrincipal .saludBelleza {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 30em;
+      text-align: center; }
+      .contenidoPrincipal .saludBelleza p {
+        margin-top: 0.1em;
+        max-width: 100%; }
+      .contenidoPrincipal .saludBelleza a {
+        display: flex;
+        flex-direction: column;
+        align-content: center; }
+    .contenidoPrincipal .cursos {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 30em;
+      text-align: center; }
+      .contenidoPrincipal .cursos h3 {
+        width: 10em; }
+      .contenidoPrincipal .cursos a {
+        display: flex;
+        flex-direction: column;
+        align-content: center; }
+  .form {
+    max-width: 100%; }
+    .form textarea {
+      max-width: 20em; }
+    .form input[type="text"] {
+      max-width: 50%;
+      font-size: 100%; }
+  .submit,
+  .reset {
+    max-width: 100px;
+    font-size: 1em; }
+  .mapa .gMaps {
+    width: 50%; } }
+
+@media only screen and (max-width: 420px) {
+  header {
+    width: 100%;
+    height: 40em; }
+    header .asana {
+      font-size: 6em; }
+    header .subAsana {
+      font-size: 2em; }
+  .navegacion {
+    width: 100%; }
+    .navegacion ul {
+      margin-right: 10%; }
+  .contenidoPrincipal {
+    width: 100%;
+    height: 100em;
+    display: flex;
+    flex-direction: column;
+    align-content: center; }
+    .contenidoPrincipal .productos {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 30em; }
+      .contenidoPrincipal .productos .imgIndex {
+        width: 15em;
+        height: 15em; }
+      .contenidoPrincipal .productos p {
+        max-width: 100%; }
+      .contenidoPrincipal .productos a {
+        display: flex;
+        flex-direction: column;
+        align-content: center; }
+    .contenidoPrincipal .saludBelleza {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 30em;
+      text-align: center;
+      margin-top: 15em; }
+      .contenidoPrincipal .saludBelleza .imgIndex {
+        width: 15em;
+        height: 15em; }
+      .contenidoPrincipal .saludBelleza p {
+        margin-top: 0.1em;
+        max-width: 100%; }
+      .contenidoPrincipal .saludBelleza a {
+        display: flex;
+        flex-direction: column;
+        align-content: center; }
+    .contenidoPrincipal .cursos {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 30em;
+      text-align: center;
+      margin-top: 25em; }
+      .contenidoPrincipal .cursos .imgIndex {
+        width: 15em;
+        height: 15em; }
+      .contenidoPrincipal .cursos p {
+        font-size: 2em; }
+      .contenidoPrincipal .cursos a {
+        display: flex;
+        flex-direction: column;
+        align-content: center; }
+        .contenidoPrincipal .cursos a h3 {
+          width: 3em; }
+  .form {
+    max-width: 100%; }
+    .form textarea {
+      max-width: 20em; }
+    .form input[type="text"] {
+      max-width: 50%;
+      font-size: 100%; }
+    .form .submit,
+    .form .reset {
+      max-width: 100px;
+      font-size: 1em; }
+  .mapa {
+    max-width: 100%;
+    margin-top: 50em; }
+    .mapa .gMaps {
+      width: 50%; }
+  footer {
+    width: 100%; }
+  #carouselExampleCaptions {
+    max-width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-top: 5%; }
+    #carouselExampleCaptions h5 {
+      width: 20%;
+      text-shadow: -2px -2px 1px #000;
+      z-index: 100%; }
+    #carouselExampleCaptions p {
+      width: 20%;
+      text-shadow: -1px -1px 1px #000;
+      z-index: 100%; } }
+
+@media only screen and (max-width: 380px) {
+  header {
+    width: 100%;
+    height: 40em; }
+    header .asana {
+      font-size: 4em; }
+    header .subAsana {
+      font-size: 1.5em; }
+  .navegacion {
+    width: 100%; }
+    .navegacion ul li a {
+      font-size: 1em; }
+  .contenidoPrincipal {
+    width: 100%;
+    height: 100em;
+    display: flex;
+    flex-direction: column;
+    align-content: center; }
+    .contenidoPrincipal .imgIndex {
+      width: 15em;
+      height: 15em; }
+    .contenidoPrincipal .productos {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      height: 30em;
+      margin: auto; }
+      .contenidoPrincipal .productos p {
+        font-size: 2em; }
+      .contenidoPrincipal .productos h3 {
+        width: 3em;
+        text-align: center; }
+      .contenidoPrincipal .productos a {
+        display: flex;
+        flex-direction: column;
+        align-content: center; }
+    .contenidoPrincipal .saludBelleza {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      height: 30em;
+      text-align: center;
+      margin: auto;
+      margin-top: 20em; }
+      .contenidoPrincipal .saludBelleza img {
+        margin: 0;
+        width: 15em;
+        height: 15em; }
+      .contenidoPrincipal .saludBelleza p {
+        font-size: 2em; }
+      .contenidoPrincipal .saludBelleza h3 {
+        width: 3em; }
+      .contenidoPrincipal .saludBelleza a {
+        display: flex;
+        flex-direction: column;
+        align-content: center; }
+    .contenidoPrincipal .cursos {
+      width: 70%;
+      height: 30em;
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      margin-top: 20em; }
+      .contenidoPrincipal .cursos img {
+        width: 15em;
+        height: 15em; }
+      .contenidoPrincipal .cursos h4 {
+        font-size: 3em; }
+      .contenidoPrincipal .cursos p {
+        font-size: 2em; }
+      .contenidoPrincipal .cursos h3 {
+        width: 3em; }
+  .form {
+    width: 100%;
+    margin-left: 0; }
+    .form textarea {
+      max-width: 15em;
+      font-size: 100%; }
+    .form input[type="text"] {
+      max-width: 10em;
+      font-size: 100%; }
+  .mapa {
+    width: 93%; }
+    .mapa .gMaps {
+      width: 15%; }
+  footer {
+    width: 100%; }
+  .mapa {
+    margin-top: 60em;
+    width: 100%; }
+    .mapa .gMaps {
+      width: 40%; } }
+
+@media only screen and (max-width: 370px) {
+  header {
+    width: 100%;
+    height: 40em; }
+    header .asana {
+      font-size: 4em; }
+    header .subAsana {
+      font-size: 1.5em; }
+  .navegacion {
+    width: 100%; }
+    .navegacion ul {
+      margin-right: 10%; }
+      .navegacion ul li a {
+        font-size: 1em; }
+  .contenidoPrincipal {
+    width: 100%;
+    height: 80em;
+    display: flex;
+    flex-direction: column;
+    align-content: center; }
+    .contenidoPrincipal .imgIndex {
+      width: 15em; }
+    .contenidoPrincipal .productos {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      height: 30em;
+      margin-left: 15%; }
+      .contenidoPrincipal .productos p {
+        font-size: 2em; }
+      .contenidoPrincipal .productos a {
+        display: flex;
+        flex-direction: column;
+        align-content: center; }
+        .contenidoPrincipal .productos a h3 {
+          margin-right: 15%;
+          width: 3em;
+          text-align: center; }
+    .contenidoPrincipal .saludBelleza {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      height: 30em;
+      text-align: center;
+      margin-left: 15%;
+      margin-top: 80%; }
+      .contenidoPrincipal .saludBelleza img {
+        width: 15em;
+        height: 15em; }
+      .contenidoPrincipal .saludBelleza p {
+        font-size: 2em; }
+      .contenidoPrincipal .saludBelleza a {
+        display: flex;
+        flex-direction: column;
+        align-content: center; }
+        .contenidoPrincipal .saludBelleza a h3 {
+          width: 3em; }
+    .contenidoPrincipal .cursos {
+      width: 70%;
+      height: 30em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      margin: auto;
+      margin-top: 100%; }
+      .contenidoPrincipal .cursos img {
+        width: 15em;
+        height: 15em; }
+      .contenidoPrincipal .cursos h4 {
+        margin-right: 20%;
+        font-size: 3em; }
+      .contenidoPrincipal .cursos p {
+        font-size: 2em; }
+      .contenidoPrincipal .cursos a h3 {
+        width: 3em; }
+  .form {
+    width: 100%;
+    margin-left: 0; }
+    .form textarea {
+      max-width: 20em; }
+    .form input[type="text"] {
+      max-width: 10em;
+      font-size: 100%; }
+    .form input[type="submit"] {
+      font-size: 100%; }
+    .form input[type="reset"] {
+      width: 100%; }
+  .mapa {
+    width: 100%;
+    margin-top: 70em; }
+    .mapa .gMaps {
+      width: 15%; }
+  footer {
+    width: 100%; } }
+
+@media only screen and (max-width: 320px) {
+  header {
+    width: 100%;
+    height: 40em; }
+    header .asana {
+      font-size: 4em; }
+    header .subAsana {
+      font-size: 1.2em; }
+  .navegacion {
+    width: 100%; }
+  .contenidoPrincipal {
+    width: 100%;
+    height: 100em;
+    display: flex;
+    flex-direction: column;
+    align-content: center; }
+    .contenidoPrincipal .productos {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      height: 30em; }
+      .contenidoPrincipal .productos p {
+        max-width: 100%; }
+      .contenidoPrincipal .productos a {
+        display: flex;
+        flex-direction: column;
+        align-content: center; }
+    .contenidoPrincipal .saludBelleza {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      height: 30em;
+      text-align: center;
+      margin-top: 20em; }
+      .contenidoPrincipal .saludBelleza p {
+        margin-top: 0.1em;
+        max-width: 100%; }
+      .contenidoPrincipal .saludBelleza a {
+        display: flex;
+        flex-direction: column;
+        align-content: center; }
+    .contenidoPrincipal .cursos {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      height: 30em;
+      text-align: center;
+      margin-top: 20em; }
+      .contenidoPrincipal .cursos a {
+        display: flex;
+        flex-direction: column;
+        align-content: center; }
+        .contenidoPrincipal .cursos a h3 {
+          width: 5em; }
+  .form {
+    width: 98%; }
+    .form textarea {
+      max-width: 30%; }
+    .form input[type="text"] {
+      max-width: 6em; }
+  .mapa {
+    margin-top: 50em;
+    width: 100%; } }
+
+@media only screen and (max-width: 280px) {
+  header {
+    width: 100%;
+    height: 40em; }
+    header .asana {
+      font-size: 4em; }
+    header .subAsana {
+      font-size: 1.2em; }
+  .navegacion {
+    width: 100%; }
+    .navegacion ul li {
+      font-size: 100%; }
+  .contenidoPrincipal {
+    width: 80%;
+    height: 100em;
+    display: flex;
+    flex-direction: column;
+    align-content: center; }
+    .contenidoPrincipal .productos {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      height: 30em; }
+      .contenidoPrincipal .productos h4 {
+        font-size: 2em; }
+      .contenidoPrincipal .productos p {
+        font-size: 1.5em; }
+      .contenidoPrincipal .productos a {
+        display: flex;
+        flex-direction: column;
+        align-content: center; }
+    .contenidoPrincipal .saludBelleza {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      height: 30em;
+      text-align: center;
+      margin-top: 25em; }
+      .contenidoPrincipal .saludBelleza h4 {
+        font-size: 2em; }
+      .contenidoPrincipal .saludBelleza p {
+        margin-top: 0.1em;
+        font-size: 1.5em; }
+      .contenidoPrincipal .saludBelleza a {
+        display: flex;
+        flex-direction: column;
+        align-content: center; }
+    .contenidoPrincipal .cursos {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      height: 30em;
+      text-align: center;
+      margin-left: 3em;
+      margin-top: 15em; }
+      .contenidoPrincipal .cursos h4 {
+        font-size: 2em; }
+      .contenidoPrincipal .cursos p {
+        font-size: 1.5em; }
+      .contenidoPrincipal .cursos a {
+        display: flex;
+        flex-direction: column;
+        align-content: center; }
+        .contenidoPrincipal .cursos a h3 {
+          width: 5em; }
+  .form {
+    width: 98%; }
+    .form textarea {
+      max-width: 18em; }
+    .form input[type="text"] {
+      max-width: 10em; }
+  footer {
+    width: 100%; }
+    footer audio {
+      width: 80%; } }
+
+.infoCursos {
+  width: 60%;
+  margin: auto;
+  margin-top: 1%;
+  background-color: rgba(0, 255, 255, 0.315);
+  text-align: center; }
+  .infoCursos h2 {
+    color: #d4a217;
+    font-family: 'Open Sans Condensed', sans-serif; }
+  .infoCursos p {
+    color: #000;
+    font-family: 'Open Sans Condensed', sans-serif; }
+
+#carouselExampleCaptions {
+  max-width: 70%;
+  margin: auto;
+  margin-top: 5%; }
+  #carouselExampleCaptions h5 {
+    text-shadow: -2px -2px 1px #000; }
+  #carouselExampleCaptions p {
+    text-shadow: -1px -1px 1px #000; }
